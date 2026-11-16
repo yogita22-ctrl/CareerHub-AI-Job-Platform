@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -21,7 +22,7 @@ import ProtectedRoute from "./middleware/ProtectedRoute";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CareerHub-AI-Job-Platform">
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<Login />} />
@@ -36,6 +37,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/jobs"
           element={
@@ -44,6 +46,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/job-recommendations"
           element={
@@ -52,6 +55,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/courses"
           element={
@@ -60,6 +64,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/roadmap"
           element={
@@ -68,6 +73,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/skills"
           element={
@@ -76,6 +82,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/resume-analyzer"
           element={
@@ -84,6 +91,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/ai-coach"
           element={
@@ -92,6 +100,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/users"
           element={
